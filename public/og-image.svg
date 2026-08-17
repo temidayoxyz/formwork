@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#101214"/>
+  
+  <g transform="translate(140, 240)">
+    <rect x="0" y="0" width="60" height="60" fill="#ffffff" />
+    <rect x="70" y="0" width="60" height="60" fill="#4A7C9B" />
+    <rect x="0" y="70" width="60" height="60" fill="#4A7C9B" />
+    <rect x="70" y="70" width="60" height="60" fill="#ffffff" />
+  </g>
+
+  <text x="320" y="315" font-family="sans-serif" font-weight="bold" font-size="90" fill="#ffffff" letter-spacing="0.05em">FORMWORK</text>
+  <text x="325" y="375" font-family="monospace" font-weight="normal" font-size="28" fill="#4A7C9B" letter-spacing="0.02em">Architecture &amp; Urban Design — Copenhagen</text>
+</svg>
