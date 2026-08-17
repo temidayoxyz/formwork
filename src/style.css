@@ -168,13 +168,28 @@ ul { list-style: none; }
 .menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 860px) {
+  /* backdrop-filter on the header creates a containing block that breaks
+     the fixed-position mobile overlay — use a solid header at this width */
+  .site-header {
+    backdrop-filter: none;
+    background: var(--bg);
+  }
   .menu-btn { display: flex; }
+
+  /* keep logo + toggle above the z-index:300 overlay so the close button stays clickable */
+  .header-inner .brand,
+  .header-inner .menu-btn {
+    position: relative;
+    z-index: 301;
+  }
+
   .primary-nav {
     position: fixed;
     top: 64px;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 300;
     background: var(--bg);
     flex-direction: column;
     align-items: stretch;
